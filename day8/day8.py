@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Dec  8 11:40:57 2022
 
-@author: AMistry
-"""
 import numpy as np
 grid = [list(map(int, line)) for line in open('day8_input.txt').read().splitlines()]
 gridarr=np.array(grid)

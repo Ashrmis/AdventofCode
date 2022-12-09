@@ -22,5 +22,6 @@ for pair in lines:
             break
 
 
+
 print(part1)
 print(part2)
