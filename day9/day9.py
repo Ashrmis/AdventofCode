@@ -1,4 +1,4 @@
-moves = open("test.txt").read().strip().split("\n")
+moves = open("day9_input.txt").read().strip().split("\n")
 
 deltas={"R":[1,0],"L":[-1,0],"U":[0,1],"D":[0,-1]}
 
@@ -9,7 +9,7 @@ T_coordinates={}
 def DiagMove(hx,hy,tx,ty):
     return (hx !=tx and hy!=ty)
         
-
+i=0
 for mv in moves:
     dirc=mv[0]
     steps=int(mv[2])
@@ -53,6 +53,9 @@ for mv in moves:
             print("touching",[Hx,Hy],[Tx,Ty])
             T_coordinates[(Tx,Ty)]=""
     print(mv)
+    i+=1
+    if i ==10:
+        break
     
     print('')
     
